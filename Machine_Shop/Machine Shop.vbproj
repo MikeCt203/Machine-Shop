@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{09251BE5-7269-4F22-979B-F2CC3176F706}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Machine_Shop.My.MyApplication</StartupObject>
+    <RootNamespace>Machine_Shop</RootNamespace>
+    <AssemblyName>Machine Shop</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Machine Shop.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Machine Shop.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Data.OleDb" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frm_Backup.Designer.vb">
+      <DependentUpon>frm_Backup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Backup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Checkbook.Designer.vb">
+      <DependentUpon>frm_Checkbook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Checkbook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CheckbookChecks.Designer.vb">
+      <DependentUpon>frm_CheckbookChecks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CheckbookChecks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CheckbookDepositsATM.Designer.vb">
+      <DependentUpon>frm_CheckbookDepositsATM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CheckbookDepositsATM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CheckbookReconcile.Designer.vb">
+      <DependentUpon>frm_CheckbookReconcile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CheckbookReconcile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Customer.Designer.vb">
+      <DependentUpon>frm_Customer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Customer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CustomerDirectory.Designer.vb">
+      <DependentUpon>frm_CustomerDirectory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CustomerDirectory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DrawingHistory.Designer.vb">
+      <DependentUpon>frm_DrawingHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DrawingHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_EmployeeDirectory.Designer.vb">
+      <DependentUpon>frm_EmployeeDirectory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_EmployeeDirectory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Employees.Designer.vb">
+      <DependentUpon>frm_Employees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Employees.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Inventory.Designer.vb">
+      <DependentUpon>frm_Inventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Inventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_InvoiceOrder.Designer.vb">
+      <DependentUpon>frm_InvoiceOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_InvoiceOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_InvoicePaid.Designer.vb">
+      <DependentUpon>frm_InvoicePaid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_InvoicePaid.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_InvoiceReorder.Designer.vb">
+      <DependentUpon>frm_InvoiceReorder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_InvoiceReorder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_InvoiceSearch.Designer.vb">
+      <DependentUpon>frm_InvoiceSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_InvoiceSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Logon.Designer.vb">
+      <DependentUpon>frm_Logon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Logon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_LogonEdit.Designer.vb">
+      <DependentUpon>frm_LogonEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_LogonEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Main.Designer.vb">
+      <DependentUpon>frm_Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Message.Designer.vb">
+      <DependentUpon>frm_Message.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Message.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PathSelector.Designer.vb">
+      <DependentUpon>frm_PathSelector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PathSelector.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PayeeEditor.Designer.vb">
+      <DependentUpon>frm_PayeeEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PayeeEditor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PaymentSchedule.Designer.vb">
+      <DependentUpon>frm_PaymentSchedule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PaymentSchedule.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Payroll.Designer.vb">
+      <DependentUpon>frm_Payroll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Payroll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PrinterSelector.Designer.vb">
+      <DependentUpon>frm_PrinterSelector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PrinterSelector.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PurchaseOrders.Designer.vb">
+      <DependentUpon>frm_PurchaseOrders.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PurchaseOrders.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_SystemSetup.Designer.vb">
+      <DependentUpon>frm_SystemSetup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SystemSetup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_WorkEditSchedule.Designer.vb">
+      <DependentUpon>frm_WorkEditSchedule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_WorkEditSchedule.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frm_Backup.resx">
+      <DependentUpon>frm_Backup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Checkbook.resx">
+      <DependentUpon>frm_Checkbook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CheckbookChecks.resx">
+      <DependentUpon>frm_CheckbookChecks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CheckbookDepositsATM.resx">
+      <DependentUpon>frm_CheckbookDepositsATM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CheckbookReconcile.resx">
+      <DependentUpon>frm_CheckbookReconcile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Customer.resx">
+      <DependentUpon>frm_Customer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CustomerDirectory.resx">
+      <DependentUpon>frm_CustomerDirectory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DrawingHistory.resx">
+      <DependentUpon>frm_DrawingHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_EmployeeDirectory.resx">
+      <DependentUpon>frm_EmployeeDirectory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Employees.resx">
+      <DependentUpon>frm_Employees.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Inventory.resx">
+      <DependentUpon>frm_Inventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_InvoiceOrder.resx">
+      <DependentUpon>frm_InvoiceOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_InvoicePaid.resx">
+      <DependentUpon>frm_InvoicePaid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_InvoiceReorder.resx">
+      <DependentUpon>frm_InvoiceReorder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_InvoiceSearch.resx">
+      <DependentUpon>frm_InvoiceSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Logon.resx">
+      <DependentUpon>frm_Logon.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_LogonEdit.resx">
+      <DependentUpon>frm_LogonEdit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Main.resx">
+      <DependentUpon>frm_Main.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Message.resx">
+      <DependentUpon>frm_Message.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PathSelector.resx">
+      <DependentUpon>frm_PathSelector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PayeeEditor.resx">
+      <DependentUpon>frm_PayeeEditor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PaymentSchedule.resx">
+      <DependentUpon>frm_PaymentSchedule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Payroll.resx">
+      <DependentUpon>frm_Payroll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PrinterSelector.resx">
+      <DependentUpon>frm_PrinterSelector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PurchaseOrders.resx">
+      <DependentUpon>frm_PurchaseOrders.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_SystemSetup.resx">
+      <DependentUpon>frm_SystemSetup.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_WorkEditSchedule.resx">
+      <DependentUpon>frm_WorkEditSchedule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGES\Exit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGES\Delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGES\New.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGES\Edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGES\Ok.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGES\Exit1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGES\Restore.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGES\Save.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGES\Cancel.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGES\SEARCH.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGES\Previous.Ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGES\Next.Ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGES\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Restore_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Restore_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
